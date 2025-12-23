@@ -1,0 +1,195 @@
+@import url(//fonts.googleapis.com/css?family=Muli);
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Muli', helvetica, sans-serif;
+}
+
+p {
+  line-height: 1.8;
+}
+
+a {
+  color: #4682b4;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #cd5c5c;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+h1 {
+  border-bottom: 1px solid #bbb;
+  padding: 0 0 10px 0;
+  margin: 0 0 20px 0;
+}
+
+h2 {
+  margin: 30px 0 20px 0;
+}
+
+ol, ul {
+  padding-left: 20px;
+}
+
+/* Header */
+#header {
+  padding: 10px 100px;
+  font-size: 14px;
+  background: #187bcd;
+  color: #fff;
+  border-bottom: 4px solid #53a6de;
+  overflow: auto;
+}
+
+#header .logo {
+  font-weight: bold;
+  font-size: 20px;
+  float: left;
+}
+
+#header ul.menu {
+  list-style: none;
+  float: left;
+  margin: 0 0 0 50px;
+  padding: 0;
+}
+
+#header ul.menu li {
+  float: left;
+  padding: 4px 10px;
+}
+
+#header ul.menu li.selected {
+  background: #53a6de;
+  border-radius: 5px;
+}
+
+#header a {
+  color: #fff;
+}
+
+#header .user {
+  float: right;
+  padding-top: 2px;
+}
+
+/* Content */
+#content {
+  padding: 30px 100px;
+}
+
+/* Forms */
+form {
+  overflow: auto;
+}
+
+form p {
+  width: 100%;
+  overflow: auto;
+}
+
+label {
+  float: left;
+  clear: both;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+input, textarea {
+  clear: both;
+  float: left;
+  padding: 6px;
+  font-family: inherit;
+  font-size: 13px;
+  border: 1px solid #999;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 300px;
+}
+
+input[type=submit], button {
+  cursor: pointer;
+  width: auto;
+  background: #4682b4;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  margin-top: 10px;
+}
+
+input[type=submit]:hover, button:hover {
+  background: #cd5c5c;
+}
+
+input[type=file] {
+  border: none;
+  padding: 0;
+}
+
+/* Messages */
+ul.messages {
+  margin: 0;
+  padding: 15px 100px;
+  list-style: none;
+  background: #f4f4f4;
+  border-bottom: 1px solid #ddd;
+}
+
+ul.messages li {
+  padding: 8px 15px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+ul.messages li.success {
+  background: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+ul.messages li.error {
+  background: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+ul.messages li.warning {
+  background: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffeeba;
+}
+
+ul.messages li.info {
+  background: #d1ecf1;
+  color: #0c5460;
+  border: 1px solid #bee5eb;
+}
+
+ul.messages li a.close {
+  float: right;
+  color: inherit;
+  font-weight: bold;
+}
+
+/* Error list (form validation) */
+.errorlist {
+  color: #cc0000;
+  padding: 0;
+  margin: 0 0 10px 0;
+  list-style: none;
+  font-size: 13px;
+}
+
+.helptext {
+  font-size: 12px;
+  color: #666;
+  clear: both;
+  display: block;
+  padding: 2px 0 10px 0;
+}

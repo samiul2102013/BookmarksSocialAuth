@@ -1,0 +1,8 @@
+<h3>Connected Accounts:</h3>
+<ul>
+{% for account in social_accounts %}
+    <li>{{ account.provider }}: Connected</li>
+{% empty %}
+    <li>No social accounts connected</li>
+{% endfor %}
+</ul>

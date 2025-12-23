@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title %}Social Accounts{% endblock %}
+
+{% block content %}
+<h1>Social Accounts</h1>
+<p>Manage your connected social accounts:</p>
+
+<h3>Connected Accounts</h3>
+{% if social_accounts %}
+    <ul class="social-accounts">
+    {% for social in social_accounts %}
+        <li>
+            <strong>{{ social.provider }}</strong>
+            {% if can_disconnect %}
+                <form action="{% url 'social:disconnect' social.provider %}" method="post">
+                    {% csrf_token %}
+                    <input type="hidden" name="association_id" value="{{ social.id }}">
+                    <button type="submit">Disconnect</button>
+                </form>
+            {% else %}
+                <span>(Cannot disconnect - this is your only login method)</span>
+            {% endif %}
+        </li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No social accounts connected.</p>
+{% endif %}
+
+<h3>Connect More Accounts</h3>
+<ul>
+    {% if not google_connected %}
+        <li><a href="{% url 'social:begin' 'google-oauth2' %}">Connect Google</a></li>
+    {% endif %}
+    {% if not github_connected %}
+        <li><a href="{% url 'social:begin' 'github' %}">Connect GitHub</a></li>
+    {% endif %}
+</ul>
+
+<p><a href="{% url 'dashboard' %}">Back to Dashboard</a></p>
+{% endblock %}
