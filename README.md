@@ -131,3 +131,6 @@ bookmarks/
 | `/account/password-reset/` | Reset password |
 | `/account/social-accounts/` | Manage social accounts |
 
+## License
+
+This project is for educational purposes.
