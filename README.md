@@ -131,19 +131,3 @@ bookmarks/
 | `/account/password-reset/` | Reset password |
 | `/account/social-accounts/` | Manage social accounts |
 
-## Learning Progress
-
-This project is part of my Django learning journey using "Django 5 by Example" book.
-
-### Completed Chapters:
-- [x] Chapter 1: Building a Blog Application
-- [x] Chapter 4: Building a Social Website - Authentication
-- [x] Chapter 5: Social Authentication
-
-## License
-
-This project is for educational purposes.
-
-## Author
-
-Samiul - Learning Django 🚀
